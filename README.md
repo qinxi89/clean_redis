@@ -1,9 +1,10 @@
 # clean_redis
 
-### 这两个脚本可以达到同样的效果，都可以用来清除redis 中指定的key键值，释放redis内存空间。  
+#### 这两个脚本可以达到同样的效果，都可以用来清除redis 中指定的key键值，释放redis内存空间。  
+
 ---
 
- clean_redis.sh 脚本解释:  
+ *clean_redis.sh 脚本解释:*   
 1.  for i in `seq 0 10000`; do: 这是一个循环结构，从0到10000，seq` 命令用于生成这个范围内的序列。
 
 2.  redis-cli -h 172.245.52.44 -p 6379 -a ***** -n 0 scan $i match portrait_user_* count 100: 这是一个 Redis 命令行客户端的调用，用于扫描 Redis 数据库中的键值对。其中：
@@ -21,6 +22,6 @@
 
 
 ---
-clean_redis.py 脚本使用方法：  
+*clean_redis.py 脚本使用方法：*    
 
 python clean_redis.py redis地址 redis端口 redis密码
