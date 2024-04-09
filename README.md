@@ -6,9 +6,9 @@
 
 
 clean_redis.sh 脚本解释:  
-`for i in `seq 0 10000`; do: 这是一个循环结构，从0到10000，seq` 命令用于生成这个范围内的序列。`
+* for i in `seq 0 10000`; do: 这是一个循环结构，从0到10000，seq` 命令用于生成这个范围内的序列。
 
-redis-cli -h 172.245.52.44 -p 6379 -a ***** -n 0 scan $i match portrait_user_* count 100: 这是一个 Redis 命令行客户端的调用，用于扫描 Redis 数据库中的键值对。其中：
+* redis-cli -h 172.245.52.44 -p 6379 -a ***** -n 0 scan $i match portrait_user_* count 100: 这是一个 Redis 命令行客户端的调用，用于扫描 Redis 数据库中的键值对。其中：
 
 -h 172.245.52.44: 指定 Redis 服务器的主机地址。
 -p 6379: 指定 Redis 服务器的端口号。
