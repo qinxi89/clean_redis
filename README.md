@@ -1,6 +1,7 @@
 # clean_redis
 
 ### 这个脚本使用来清除redis 中指定的key键值，释放磁盘空间。  
+---
 
 clean_redis.sh 脚本解释:  
 * for i in `seq 0 10000`; do: 这是一个循环结构，从0到10000，seq` 命令用于生成这个范围内的序列。
