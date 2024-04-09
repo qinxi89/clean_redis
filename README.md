@@ -26,4 +26,4 @@
 ---
 *clean_redis.py 脚本使用方法：*    
 
-python clean_redis.py redis地址 redis端口 redis密码
+python clean_redis.py redis地址 redis端口 redis密码 要清除的key  
