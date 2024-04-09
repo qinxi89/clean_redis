@@ -1,6 +1,6 @@
 # clean_redis
 
-### 这个脚本使用来清除redis 中指定的key键值，释放磁盘空间。  
+### 这两个脚本可以达到同样的效果，都可以用来清除redis 中指定的key键值，释放磁盘空间。  
 ---
 
  clean_redis.sh 脚本解释:  
@@ -22,4 +22,5 @@
 
 ---
 clean_redis.py 脚本使用方法：  
+
 python clean_redis.py redis地址 redis端口 redis密码
